@@ -11,8 +11,14 @@ if [ $(tput colors) ]; then
 	endcolor="\e[39m"
 fi
 
+echo "Instalar pacotes gráficos como: gimp, inkscape é krita?"
 read graphics
+
+echo "Instalar pacote bundle sass, jekyll é middleman para sites estáticos?"
 read bundles
+
+echo "Instalar pacote KVM para desenvolvimento android?"
+read kvm
 
 echo ;
 echo "UPDATE AND UPGRADE SYSTEM"
