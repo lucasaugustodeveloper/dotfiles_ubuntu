@@ -19,3 +19,5 @@ echo "INSTALLATION OBS STUDIO"
   apt-get update && apt-get install obs-studio
 ) > /dev/null & echo -e "$green INSTALLATION OK $endcolor" || echo -e "$red INSTALLATION FAILED $endcolor"
 
+./install_docker
+
