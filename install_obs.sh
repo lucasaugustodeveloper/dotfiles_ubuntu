@@ -9,15 +9,12 @@ fi
 echo ;
 echo "INSTALLATION FFMPEG"
 (
-  apt-get install -y ffmpeg
+  sudo apt-get install -y ffmpeg
 ) > /dev/null & echo -e "$green INSTALLATION OK $endcolor" || echo -e "$red INSTALLATION FAILED $endcolor"
 
 echo ;
 echo "INSTALLATION OBS STUDIO"
 (
-  add-apt-repository -y ppa:obsproject/obs-studio
-  apt-get update && apt-get install obs-studio
+  sudo add-apt-repository -y ppa:obsproject/obs-studio
+  sudo apt-get update && apt-get install obs-studio
 ) > /dev/null & echo -e "$green INSTALLATION OK $endcolor" || echo -e "$red INSTALLATION FAILED $endcolor"
-
-./install_docker
-
