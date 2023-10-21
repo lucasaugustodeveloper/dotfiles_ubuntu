@@ -25,9 +25,9 @@ echo "UPDATE AND UPGRADE SYSTEM"
 ) &> /dev/null && echo -e "$green UPDATE OK $endcolor" || echo -e "$red UPDATE FAILED $endcolor"
 
 echo ;
-echo "INTALLATION TERMINATOR, ALACRITTY"
+echo "INTALLATION TERMINATOR, TMUX"
 (
-	sudo apt install -y terminator alacritty
+	sudo apt install -y terminator tmux
 ) &> /dev/null && echo -e "$green INSTALLATION  OK $endcolor" || echo -e "$red INSTALLATION  FAILED $endcolor"
 
 echo ;
