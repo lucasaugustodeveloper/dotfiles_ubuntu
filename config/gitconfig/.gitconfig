@@ -1,0 +1,39 @@
+[alias]
+	vlog = log --graph --date-order --date=relative --pretty=format:\"%C(#c8d3f5)%h: %Cgreen - %an - %Cred %C(cyan)%ar:%Creset%n%s%n\" --color
+	s = !git status -s
+	c = !git add --all && git commit -m
+  l = !git log --pretty='format:%C(blue)%h %C(red)%d %C(white)%s - %C(cyan)%cn, %C(green)%cr'
+
+[init]
+	defaultBranch = main
+
+[editor]
+	core = lvim
+
+[sequence]
+	editor = lvim
+
+[includeIf "gitdir:~/Repositories/"]
+  path = ~/dotfiles/config/gitconfig/.gitconfig-default
+[includeIf "gitdir:~/Projects/"]
+  path = ~/dotfiles/config/gitconfig/.gitconfig-default
+[includeIf "gitdir:~/dotfiles/"]
+  path = ~/dotfiles/config/gitconfig/.gitconfig-default
+[includeIf "gitdir:~/Tests/"]
+  path = ~/dotfiles/config/gitconfig/.gitconfig-default
+
+
+[pull]
+	rebase = false
+
+[push]
+	default = simple
+
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+  process = git-lfs filter-process
+
+[user]
+  name = Lucas Augusto Silva
