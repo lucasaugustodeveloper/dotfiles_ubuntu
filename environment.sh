@@ -23,7 +23,7 @@ rm ~/.zshrc
 ln -s ~/dotfiles/config/zsh/.zshrc ~/.zshrc
 
 # LunarVim
-ln -s ~/dotfiles/config/lvim/config.lua ~/.config/lvim/config.lua
+ln -s ~/dotfiles/config/lvim ~/.config/lvim
 
 # Tmux
 ln -s ~/dotfiles/config/tmux/.tmux.conf ~/.tmux.conf
