@@ -19,7 +19,6 @@ ln -s ~/dotfiles/config/gitconfig/.gitconfig ~/.gitconfig
 ln -s ~/dotfiles/config/zsh/.p10k.zsh ~/.p10k.zsh
 
 # ZSH
-rm ~/.zshrc
 ln -s ~/dotfiles/config/zsh/.zshrc ~/.zshrc
 
 # LunarVim
