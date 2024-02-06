@@ -11,69 +11,6 @@ if [ $(tput colors) ]; then
 	endcolor="\e[39m"
 fi
 
-echo "Instalar pacotes gráficos como: gimp, inkscape é krita?"
-read graphics
-
-echo "Instalar pacote KVM para desenvolvimento android?"
-read kvm
-
-clear
-echo ;
-echo "UPDATE AND UPGRADE SYSTEM"
-(
-	sudo apt update -y && sudo apt upgrade -y
-) &> /dev/null && echo -e "$green UPDATE OK $endcolor" || echo -e "$red UPDATE FAILED $endcolor"
-
-echo ;
-echo "INTALLATION TERMINATOR, TMUX"
-(
-	sudo apt install -y terminator tmux
-) &> /dev/null && echo -e "$green INSTALLATION  OK $endcolor" || echo -e "$red INSTALLATION  FAILED $endcolor"
-
-echo ;
-echo "INSTALLATION SILVER SEARCHER"
-(
-  sudo apt install -y silversearcher-ag
-) &> /dev/null && echo -e "$green INSTALLATION OK $endcolor" || echo -e "$red INSTALLATION FAILED $endcolor"
-
-echo ;
-echo "INSTALLATION GSTREAMER"
-(
-	sudo apt install -y gstreamer*
-) &> /dev/null && echo -e "$green INSTALLATION OK $endcolor" || echo -e "$red INSTALLATION FAILED $endcolor"
-
-echo ;
-echo "INSTALLATION VLC"
-(
-	sudo apt install -y vlc
-) &> /dev/null && echo -e "$green INSTALLATION OK $endcolor" || echo -e "$red INSTALLATION FAILED $endcolor"
-
-echo ;
-echo "INTALLATION GEDIT"
-(
-	sudo apt install -y gedit
-) &> /dev/null && echo -e "$green INSTALLATION OK $endcolor" || echo -e "$red INSTALLATION FAILED $endcolor"
-
-echo ;
-echo "INSTALLATION CALIBRE"
-(
-	sudo apt install -y calibre
-) &> /dev/null && echo -e "$green INSTALLATION OK $endcolor" || echo -e "$red INSTALLATION FAILED $endcolor"
-
-echo ;
-echo "INSTALLATION GPARTED"
-(
-	sudo apt install -y gparted
-) &> /dev/null && echo -e "$green INSTALLATION OK $endcolor" || echo -e "$red INSTALLATION FAILED $endcolor"
-
-if [ $graphics -eq "y" ]; then
-echo ;
-echo "INSTALLATION INKSCAPE, GIMP, KRITA"
-(
-	sudo apt install -y inkscape gimp krita
-) &> /dev/null && echo -e "$green INSTALLATION OK $endcolor" || echo -e "$red INSTALLATION FAILED $endcolor"
-fi
-
 echo ;
 echo "INSTALLATION OTHER PACKAGES"
 (
