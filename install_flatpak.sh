@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 
+clear
+echo "===================================="
+echo "    INSTALATION PROGRAMS Flatpak    "
+echo "===================================="
+
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo && \
 flatpak remotes && \
 flatpak update
@@ -24,7 +29,5 @@ flatpak install flathub -y io.freetubeapp.FreeTube && \
 flatpak install flathub -y io.github.aandrew_me.ytdn && \
 flatpak install flathub -y org.flameshot.Flameshot && \
 flatpak install flathub -y net.cozic.joplin_desktop && \
-flatpak install flathub -y com.authy.Authy && \
 flatpak install flathub -y org.gustavoperedo.FontDownloader && \
-
-flatpak list
+flatpak install flathub -y io.dbeaver.DBeaverCommunity
