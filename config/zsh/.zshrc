@@ -121,18 +121,18 @@ source $HOME/.cargo/env
 source $HOME/.asdf/asdf.sh
 export PATH=$HOME/.local/bin:$PATH
 
-#export ANDROID_HOME=/opt/android-sdk
+export ANDROID_HOME=$HOME/Android/Sdk
 #export JAVA_HOME=/usr/lib/jvm/java-11-openjdk
-#export FLUTTER_PATH=/opt/flutter/bin
+export FLUTTER_PATH=/opt/flutter/bin
 #export ANDROID_HOME=$HOME/Android/cmdline-tools/latest
 #export ANDROID_HOME=/opt/android-sdk
-#export CHROME_EXECUTABLE=/opt/google/chrome/google-chrome
+export CHROME_EXECUTABLE=/opt/google/chrome/google-chrome
 
-#export PATH=$PATH:$ANDROID_HOME/emulator
-#export PATH=$PATH:$ANDROID_HOME/platform-tools
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/platform-tools
 #export PATH=$PATH:$JAVA_HOME
-#export PATH=$PATH:$FLUTTER_PATH
-#export PATH=$PATH:$ANDROID_HOME
+export PATH=$PATH:$FLUTTER_PATH
+export PATH=$PATH:$ANDROID_HOME
 
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
