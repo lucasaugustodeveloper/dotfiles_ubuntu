@@ -32,4 +32,8 @@ flatpak install flathub -y net.cozic.joplin_desktop && \
 flatpak install flathub -y org.gustavoperedo.FontDownloader && \
 flatpak install flathub -y io.dbeaver.DBeaverCommunity && \
 flatpak install flathub com.github.iwalton3.jellyfin-media-player -y && \
-flatpak install flathub tv.plex.PlexDesktop -y
+flatpak install flathub tv.plex.PlexDesktop -y && \
+flatpak install flathub com.github.johnfactotum.Foliate -y && \
+flatpak install flathub com.calibre_ebook.calibre -y && \
+flatpak install flathub io.github.alainm23.planify -y && \
+flatpak install flathub com.github.babluboy.bookworm -y
