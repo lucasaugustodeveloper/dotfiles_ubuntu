@@ -30,4 +30,6 @@ flatpak install flathub -y io.github.aandrew_me.ytdn && \
 flatpak install flathub -y org.flameshot.Flameshot && \
 flatpak install flathub -y net.cozic.joplin_desktop && \
 flatpak install flathub -y org.gustavoperedo.FontDownloader && \
-flatpak install flathub -y io.dbeaver.DBeaverCommunity
+flatpak install flathub -y io.dbeaver.DBeaverCommunity && \
+flatpak install flathub com.github.iwalton3.jellyfin-media-player -y && \
+flatpak install flathub tv.plex.PlexDesktop -y
