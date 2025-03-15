@@ -1,7 +1,7 @@
 [alias]
 	vlog = log --graph --date-order --date=relative --pretty=format:\"%C(#c8d3f5)%h: %Cgreen - %an - %Cred %C(cyan)%ar:%Creset%n%s%n\" --color
 	s = !git status -s
-	c = !git add --all && git commit -m
+	c = !gitmoji -c
   l = !git log --pretty='format:%C(blue)%h %C(red)%d %C(white)%s - %C(cyan)%cn, %C(green)%cr'
 
 [init]
@@ -37,3 +37,5 @@
 
 [user]
   name = Lucas Augusto Silva
+[commit]
+	gpgsing = true
