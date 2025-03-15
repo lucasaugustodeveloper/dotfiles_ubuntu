@@ -118,8 +118,12 @@ alias cat="bat --style=\"numbers,changes,header\""
 # add source of applications
 source $HOME/.cargo/bin
 source $HOME/.cargo/env
-source $HOME/.asdf/asdf.sh
+#source $HOME/.asdf/asdf.sh
 export PATH=$HOME/.local/bin:$PATH
+export PATH="$PATH:/usr/local/go/bin"
+export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
+
+
 
 export ANDROID_HOME=$HOME/Android/Sdk
 #export JAVA_HOME=/usr/lib/jvm/java-11-openjdk
@@ -142,3 +146,5 @@ export PATH=$PATH:$ANDROID_HOME
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+PATH=~/.console-ninja/.bin:$PATH
