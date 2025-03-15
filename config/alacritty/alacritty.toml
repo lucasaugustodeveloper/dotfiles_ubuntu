@@ -11,7 +11,7 @@ shape = "Beam"
 size = 14
 
 [font.normal]
-family = "Hasklug Nerd Font"
+family = "JetBrains Mono"
 style = "normal"
 
 [[keyboard.bindings]]
