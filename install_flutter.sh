@@ -5,8 +5,6 @@ curl https://storage.googleapis.com/flutter_infra/releases/stable/linux/flutter_
 
 tar xf flutter_linux_v1.9.1+hotfix.6-stable.tar.xz
 
-mv flutter/ ~/
+mv flutter/ /opt
 rm -Rf flutter_linux_v1.9.1+hotfix.6-stable.tar.xz
 
-echo 'export PATH="$PATH:/home/$USER/flutter/bin"' >> ~/.bashrc
-echo 'export PATH="$PATH:/home/$USER/flutter/bin"' >> ~/.zshrc
