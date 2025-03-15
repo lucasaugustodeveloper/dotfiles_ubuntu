@@ -17,7 +17,6 @@ flatpak install flathub -y io.beekeeperstudio.Studio --or-update && \
 flatpak install flathub -y org.gaphor.Gaphor --or-update
 flatpak install flathub -y com.github.Bleuzen.FFaudioConverter --or-update && \
 flatpak install flathub -y com.github.Flacon --or-update && \
-flatpak install flathub -y com.github.JannikHv.Gydl --or-update && \
 flatpak install flathub -y com.github.Johnn3y.Forklift --or-update && \
 flatpak install flathub -y com.github.artemanufrij.playmyvideos --or-update && \
 flatpak install flathub -y io.github.JaGoLi.ytdl_gui --or-update && \
